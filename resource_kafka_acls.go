@@ -14,26 +14,31 @@ func resourceKafkaAcls() *schema.Resource {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Project to link the kafka topic to",
+				ForceNew:    true,
 			},
 			"service_name": {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Service to link the kafka topic to",
+				ForceNew:    true,
 			},
 			"topic": {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Topic name",
+				ForceNew:    true,
 			},
 			"username": {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Username",
+				ForceNew:    true,
 			},
 			"permission": {
 				Type:        schema.TypeString,
 				Required:    true,
 				Description: "Permission to create",
+				ForceNew:    true,
 			},
 		},
 	}
