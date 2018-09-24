@@ -47,6 +47,7 @@ func Provider() *schema.Provider {
 			"aiven_database":     resourceDatabase(),
 			"aiven_service_user": resourceServiceUser(),
 			"aiven_kafka_topic":  resourceKafkaTopic(),
+			"aiven_kafka_acls":   resourceKafkaAcls(),
 		},
 
 		ConfigureFunc: func(d *schema.ResourceData) (interface{}, error) {
